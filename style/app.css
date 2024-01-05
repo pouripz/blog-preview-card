@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Figtree:wght@600;800&display=swap");
+
+/* Reset */
+html {
+  font-size: 62.5%;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  cursor: default;
+}
+
+body {
+  color: var(--Black);
+  background-color: var(--Yellow-color);
+  font-size: 1.4rem;
+  font-family: "Figtree";
+}
+
+h1,
+h2,
+h3 {
+  font-size: 1.8rem;
+}
+
+/* Variable */
+:root {
+  --Yellow-color: hsl(47, 88%, 63%);
+  --Grey-color: hsl(0, 0%, 50%);
+  --Black: hsl(0, 0%, 7%);
+}
+
+/* Main */
+.main {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-wrapper {
+  width: 310px;
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 1.5rem;
+  border: 1px solid var(--Black);
+  box-shadow: 10px 10px 0 var(--Black);
+}
+
+.card-image {
+  width: 100%;
+  background: url("../image/illustration-article.svg") no-repeat;
+  background-size: cover;
+  height: 150px;
+  margin-bottom: 1.8rem;
+  border-radius: 1rem;
+}
+
+.card-bottom {
+  min-height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.learning {
+  padding: 0.6rem 1rem;
+  background-color: var(--Yellow-color);
+  color: var(--Black);
+  display: block;
+  align-self: flex-start;
+  border-radius: 0.5rem;
+  font-weight: 800;
+}
+
+.card__title:hover {
+  transition: all 200ms ease-in-out;
+  color: var(--Yellow-color);
+}
+
+.card__description {
+  max-width: 25rem;
+  margin: 0;
+  color: var(--Grey-color);
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.user__image {
+  width: 3.5rem;
+  height: 3.5rem;
+  background: url("../image/image-avatar.webp") no-repeat;
+  background-size: cover;
+  border-radius: 100%;
+}
+
+.user__name {
+  font-size: 1.5rem;
+}
+
+/* Responsive */
+@media all and (min-width: 640px) {
+  .card-wrapper {
+    width: 340px;
+  }
+
+  .card__description {
+    max-width: 28rem;
+  }
+}
+
+@media all and (min-width: 768px) {
+  .card__title {
+    cursor: pointer;
+  }
+}
+
+@media all and (min-width: 1024px) {
+}
+
+@media all and (min-width: 1280px) {
+}
