@@ -44,6 +44,7 @@ h3 {
 
 .card-wrapper {
   width: 310px;
+  min-height: 300px;
   background-color: #fff;
   padding: 2rem;
   border-radius: 1.5rem;
@@ -121,10 +122,4 @@ h3 {
   .card__title {
     cursor: pointer;
   }
-}
-
-@media all and (min-width: 1024px) {
-}
-
-@media all and (min-width: 1280px) {
 }
